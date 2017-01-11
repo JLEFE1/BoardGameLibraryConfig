@@ -1,3 +1,5 @@
+message: Hello boardgamers!
+
 spring:
   profiles:
     active: cloud
