@@ -2,29 +2,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka:8761/eureka
-
-security:
-  oauth2:
-    client:
-      clientId: 8637e1875da03e60e45f
-      clientSecret: 095fcbaa0c3140075f5223c2f8479e46024d38e4
-      accessTokenUri: https://github.com/login/oauth/access_token
-      userAuthorizationUri: https://github.com/login/oauth/authorize
-      clientAuthenticationScheme: form
-    resource:
-      userInfoUri: https://api.github.com/user
-
-spring:
-  jpa:
-    show-sql: false
-    properties:
-      hibernate:
-        #default_catalog: prestige
-        default_schema: dbo
-        dialect: org.hibernate.dialect.SQLServer2012Dialect
-    hibernate:
-      ddl-auto: none
-  datasource:
-    url: jdbc:sqlserver://prestige-db-server.database.windows.net:1433;database=prestige;user=prestige@prestige-db-server;password=pr3stIg3;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    initialize: false
